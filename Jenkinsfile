@@ -1,5 +1,5 @@
 node{
-    git branch: "master", URL: "https://github.com/MahmoudMohamedRashad/remote-demo.git"
+    git branch: "master", url: 'https://github.com/MahmoudMohamedRashad/remote-demo.git'
     stage('build'){
         try{
             sh'echo"your build stage sucess!"'
