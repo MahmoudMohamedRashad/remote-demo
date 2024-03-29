@@ -8,7 +8,7 @@ node{
             sh'echo "build stage failed"'
         }
     stage("testing"){
-        if(env.BRANCH_NAME == "main"){
+        if(env.BRANCH_NAME == "master"){
             sh'echo "hello from main! your test success"'
         }
         else{
