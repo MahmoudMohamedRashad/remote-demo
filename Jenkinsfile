@@ -1,15 +1,15 @@
 node{
-    git branch: "main", url: "https://github.com/MahmoudMohamedRashad/remote-demo.git"
-    stage("build"){
+    git branch: "master", URL: "https://github.com/MahmoudMohamedRashad/remote-demo.git"
+    stage('build'){
         try{
             sh'echo"your build stage sucess!"'
         } 
         catch(Exception error){
-            sh'echo"build stage faild"'
+            sh'echo"build stage failed"'
         }
-    stage("testing"){
+    stage('testing'){
         if(env.BRANCH_NAME == "main"){
-            sh'echo"hello from main! your test sucess"'
+            sh'echo"hello from main! your test success"'
         }
         else{
             sh'echo"branch error"'
